@@ -77,7 +77,7 @@ namespace Rocky
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-            dbInitializer.Initialize(); //вызов метода создания первого админа в БД
+            dbInitializer.Initialize(); 
             app.UseSession();
             app.UseEndpoints(endpoints =>
             {
